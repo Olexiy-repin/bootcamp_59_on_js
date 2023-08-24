@@ -245,21 +245,21 @@ arr = users;
 ? fullName – складається з firstName та lastName.
 */
 
-let users = [
-  { id: 1, firstName: 'Іван', lastName: 'Іванко', age: 30 },
-  { id: 2, firstName: 'Ганна', lastName: 'Іванко', age: 30 },
-  { id: 3, firstName: 'Петро', lastName: 'Петренко', age: 40 },
-];
+// let users = [
+//   { id: 1, firstName: 'Іван', lastName: 'Іванко', age: 30 },
+//   { id: 2, firstName: 'Ганна', lastName: 'Іванко', age: 30 },
+//   { id: 3, firstName: 'Петро', lastName: 'Петренко', age: 40 },
+// ];
 
-const transformUsersNameToFullName = users => {
-  return users.map((user, idx, arr) => {
-    const { firstName, lastName, ...otherProps } = user;
+// const transformUsersNameToFullName = users => {
+//   return users.map((user, idx, arr) => {
+//     const { firstName, lastName, ...otherProps } = user;
 
-    return {
-      fullName: `${firstName} ${lastName}`,
-      ...otherProps,
-    };
-  });
-};
+//     return {
+//       fullName: `${firstName} ${lastName}`,
+//       ...otherProps,
+//     };
+//   });
+// };
 
-console.log(transformUsersNameToFullName(users));
+// console.log(transformUsersNameToFullName(users));
