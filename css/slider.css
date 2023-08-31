@@ -1,0 +1,48 @@
+.slider {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sldier-slide {
+  min-height: 100px;
+  border: 1px solid #303030;
+  color: #111111;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slick-dots button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #303030;
+  cursor: pointer;
+  font-size: 0;
+  background-color: transparent;
+  padding-left: 0;
+  padding: 0;
+}
+
+.slick-dots button::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  content: '';
+}
+
+.slick-active button::before {
+  background-color: teal;
+}

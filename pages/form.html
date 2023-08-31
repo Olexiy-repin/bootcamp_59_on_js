@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="contact-form js-contact-form">
+      <label class="contact-form-field">
+        Your email address:
+        <input
+          class="contact-form-input"
+          type="email"
+          name="user_email"
+          placeholder="test@gmail.com"
+          required
+        />
+      </label>
+      <label class="contact-form-field">
+        Your phone number:
+        <input
+          class="contact-form-input"
+          type="tel"
+          name="user_phone"
+          placeholder="xxx-xxx-xx-xx"
+          required
+        />
+      </label>
+      <button type="submit" class="contact-form-submit">Submit</button>
+    </form>
+    <div class="js-output-form-data"></div>
+
+    <script src="../js/form.js"></script>
+  </body>
+</html>
