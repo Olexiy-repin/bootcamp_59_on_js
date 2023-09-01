@@ -1,0 +1,26 @@
+{
+  "name": "bootcamp_59_on_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "npx postcss src/css/*.css --use autoprefixer -d build/css/",
+    "babel": "babel src/js/*.js -d build/js/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
