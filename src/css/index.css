@@ -1,0 +1,15 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+.link {
+  text-decoration: none;
+}
+
+.page-header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: teal;
+}
+
+.logotypy {
+  color: #ffffff;
+}
