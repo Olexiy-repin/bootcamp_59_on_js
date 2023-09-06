@@ -1,0 +1,32 @@
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #337ccf;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.cart-link {
+  line-height: 0;
+}
+
+.cart-link-icon {
+  fill: #ffffff;
+  transition: fill 250ms ease-out;
+}
+
+.cart-link:hover .cart-link-icon,
+.cart-link:focus .cart-link-icon {
+  fill: #ffc436;
+}

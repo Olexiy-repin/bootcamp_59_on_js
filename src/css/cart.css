@@ -1,0 +1,38 @@
+@import url('../css/base/common.css');
+@import url('../css/layout/header.css');
+
+.products-item {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  padding: 20px;
+  border: 1px solid #404040;
+}
+
+.products-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.products-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.products-content {
+  flex-grow: 1;
+}
+
+.products-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.products-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
