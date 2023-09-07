@@ -1,12 +1,31 @@
-/* 
-<li class="products-item">
-      <img src="" alt="" class="products-img" />
-      <div class="products-content">
-        <h3 class="products-title"></h3>
-        <p class="products-description"></p>
-        <p class="products-rating"></p>
-        <span class="products-price"></span>
-        <button class="products-add-to-cart-btn" type="button"></button>
-      </div>
-    </li> 
-*/
+import productsDb from '../json/productsDb.json';
+import localStorageService from './localStorageService';
+import { createProductCard } from './templates/productCard';
+
+const productsListEl = document.querySelector('.js-products');
+
+const prdoctsTemplate = productsDb
+  .map(productInfo => createProductCard(productInfo))
+  .join('');
+
+productsListEl.innerHTML = prdoctsTemplate;
+
+const productsIdentificators = [];
+
+const onAddToCartBtnElClick = event => {
+  if (event.target.nodeName !== 'BUTTON') {
+    return;
+  }
+
+  const { target: addToCartBtnEl } = event;
+
+  addToCartBtnEl.disabled = true;
+
+  const productId = addToCartBtnEl.dataset.productId;
+
+  productsIdentificators.push(productId);
+
+  localStorageService.save('productsToCart', productsIdentificators);
+};
+
+productsListEl.addEventListener('click', onAddToCartBtnElClick);

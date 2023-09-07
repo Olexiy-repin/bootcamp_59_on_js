@@ -4,7 +4,7 @@
   background-color: #337ccf;
 }
 
-.page-header-container {
+.page-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
